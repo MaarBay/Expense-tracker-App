@@ -1,0 +1,131 @@
+
+
+* {
+  font-family: "Crimson+Text", Arial, Helvetica, sans-serif;
+  color: rgb(115, 111, 111);
+}
+
+.container {
+  width: auto;
+  height: auto;
+  background-color:rgb(207, 229, 228);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1 {
+  color: #173a47;
+  font-family: "Gloock", sans-serif;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #285D70;
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+input {
+  width: 90%;
+  height: 30px;
+  margin: 8px;
+  border: none;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+button,
+select {
+  width: 93.5%;
+  height: 34px;
+  margin: 8px;
+  border: none;
+  padding: 3px;
+}
+
+select {
+  width: 93.5%;
+}
+
+button {
+  margin-top: 40px;
+  cursor: pointer;
+  background-color: #2A8787;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-weight: bolder;
+  
+}
+
+
+
+table {
+  margin: 20px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+th,
+tbody {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+/*tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}*/
+
+th {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+  background-color: #285D70;
+  color: white;
+  border: none;
+}
+
+tbody {
+  color: rgb(8, 8, 8);
+  background-color:#2A8787;
+  margin: 30px;
+ 
+ 
+}
+
+#table {
+  padding: 10px;
+   color: white;
+}
+
+.deleteButton {
+  cursor: pointer;
+   color: white;
+}
+
+.deleteButton:hover {
+ color: black;
+}
+
+
+h2{
+  margin-bottom: 0;
+  font-family: "Gloock", sans-serif;
+  color: #173a47;
+  
+}
+
+p{
+  color: #173a47;
+  font-size: 2rem;
+  margin-top: 10px;
+  font-family: "Gloock", sans-serif;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker</title>
+      <link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <h1>Expense Tracker</h1>
+
+       
+       <p id="total"></p>
+      </header>
+
+      <selection class="form">
+          <form id="formExpense">
+            <input type="text" placeholder="Expense" id="expenseBtn" />
+            <input type="text" placeholder="Amount" id="amountBtn" />
+            <input type="date" placeholder="Date" id="dateBtn" />
+            <select placeholder="payment" id="optionsBtn">
+              <option value="Card">Card</option>
+              <option value="Cash">Cash</option>
+              <h3 id="message">Show the message</h3>
+                 <ul id="list" class="list"></ul>
+            </select>
+            <button
+              type="submit"
+              class="addExpenseBtn"
+            >
+              ADD EXPENSE
+            </button>
+          </form>
+      </selection>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Expense</th>
+              <th>Amount</th>
+              <th>Date</th>
+              <th>Payment</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="expenseTable"></tbody>
+        </table>
+  
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
