@@ -1,6 +1,5 @@
 //Selectors
 const submitBtn = document.getElementById("formExpense");
-
 const expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 
 // Event Listeners
@@ -12,12 +11,13 @@ function addExpense(e) {
   e.preventDefault();
   let expenseBtn = document.getElementById("expenseBtn").value;
   const uppExpense = expenseBtn.charAt(0).toUpperCase() + expenseBtn.substr(1);
-  let amount = document.getElementById("amountBtn").value;
+  let amountInput = document.getElementById("amountBtn");
+  let amount = Number(amountInput.value);
   let date = document.getElementById("dateBtn").value;
   let type = document.getElementById("optionsBtn").value;
 
 
-  if (amount > 0 && date != 0 && type != "payment") {
+  if (amount > 0 && date != 0) {
     const expense = {
       uppExpense,
       amount,
@@ -26,6 +26,8 @@ function addExpense(e) {
       id: expenses.length > 0 ? expenses[expenses.length - 1].id + 1 : 1, 
     };
     expenses.push(expense);
+
+updateExpensesDisplay();
 
     localStorage.setItem("expenses", JSON.stringify(expenses));
   }
@@ -51,6 +53,12 @@ const showExpenses = () => {
 
 };
 
+function updateExpensesDisplay () {
+const totalExpenses = expenses.reduce((acc, curr) => acc + curr.amount, 0);
+const totalExpensesDisplay = document.getElementById("total");
+totalExpensesDisplay.innerText = `Total Expenses: ${totalExpenses}€`;
+}
+
 const deleteExpense = (id) => {
   for (let i = 0; i < expenses.length; i++) {
     if (expenses[i].id == id) {
@@ -60,6 +68,8 @@ const deleteExpense = (id) => {
 
   localStorage.setItem("expenses", JSON.stringify(expenses));
   showExpenses();
+  updateExpensesDisplay();
 };
 
 showExpenses();
+updateExpensesDisplay();
