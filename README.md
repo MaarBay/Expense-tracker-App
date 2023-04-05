@@ -13,7 +13,7 @@ Expense tracker app lets users keep track of all their expenses including the da
 
 *View and interact with the project [here](https://maarbay.github.io/expense-tracker-app)*
 
-![Image](expenseTrack.png)
+![Image](preview.png)
 
 
 
