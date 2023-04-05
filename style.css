@@ -39,8 +39,6 @@ input {
   margin: 8px;
   border: none;
   padding: 3px;
-  padding-left: 7px;
-  padding-right: 7px;
 }
 
 button,
@@ -53,7 +51,7 @@ select {
 }
 
 select {
-  width: 93.5%;
+  width: 90%;
 }
 
 button {
@@ -65,7 +63,6 @@ button {
   font-weight: bolder;
   
 }
-
 
 
 table {
