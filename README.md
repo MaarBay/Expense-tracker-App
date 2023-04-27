@@ -1,5 +1,5 @@
 
-# Java Script Expense Tracker App
+# JavaScript Expense Tracker App
 
 #### This app is a part of Odin project’s curriculum and servers as an example project for my personal web development portfolio. 
 
@@ -7,7 +7,7 @@ Expense tracker app lets users keep track of all their expenses including the da
 
 ### Build with:
 
-- Java Script
+- JavaScript
 - HTML 5
 - CSS 3
 
@@ -18,4 +18,4 @@ Expense tracker app lets users keep track of all their expenses including the da
 
 
 
-This application is built to showcase my understanding of Java Script, alongside the ability to implement CSS and HTML. 
+This application is built to showcase my understanding of JavaScript, alongside the ability to implement CSS and HTML. 
