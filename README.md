@@ -1,5 +1,5 @@
 
-# Java Script Expense tracker app
+# Java Script Expense Tracker App
 
 #### This app is a part of Odin project’s curriculum and servers as an example project for my personal web development portfolio. 
 
