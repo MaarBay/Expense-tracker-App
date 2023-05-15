@@ -118,35 +118,30 @@ p {
   font-family: "Gloock", sans-serif;
 }
 
-/* Tablets */
-@media only screen and (max-width: 1023px) {
-  .form {
-    width: 60%;
-  }
-
-  table {
-    width: 90%;
-  }
-}
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .form {
-    width: 80%;
+    width: 40%;
   }
 
   table {
     width: 100%;
   }
 
-    input[type="date"] {
+  input[type="date"],
+  input[type="date"]::-webkit-datetime-edit-text,
+  input[type="date"]::-webkit-datetime-edit-month-field,
+  input[type="date"]::-webkit-datetime-edit-day-field,
+  input[type="date"]::-webkit-datetime-edit-year-field {
     width: 90%;
     height: 30px;
     margin: 8px;
     border: none;
     padding: 3px;
-    font-size: 14px; /* Adjust the font size as needed */
+    font-size: 14px; 
   }
+
 }
 
 /* Small Mobile */
@@ -162,5 +157,19 @@ p {
     padding: 3px;
     font-size: 14px; /* Adjust the font size as needed */
   }
+
+  input[type="date"],
+  input[type="date"]::-webkit-datetime-edit-text,
+  input[type="date"]::-webkit-datetime-edit-month-field,
+  input[type="date"]::-webkit-datetime-edit-day-field,
+  input[type="date"]::-webkit-datetime-edit-year-field {
+    width: 90%;
+    height: 30px;
+    margin: 8px;
+    border: none;
+    padding: 3px;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+
 }
 
