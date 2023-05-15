@@ -138,6 +138,15 @@ p {
   table {
     width: 100%;
   }
+
+    input[type="date"] {
+    width: 90%;
+    height: 30px;
+    margin: 8px;
+    border: none;
+    padding: 3px;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
 }
 
 /* Small Mobile */
@@ -145,4 +154,13 @@ p {
   .form {
     width: 95%;
   }
+  input[type="date"] {
+    width: 90%;
+    height: 30px;
+    margin: 8px;
+    border: none;
+    padding: 3px;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
 }
+
